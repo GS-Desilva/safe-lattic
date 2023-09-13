@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/widget_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:background="@drawable/widget_background"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:visibility="visible"
+    tools:visibility="visible">
+
+
+
+        <TextView
+            android:id="@+id/widget_title"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Alert Contacts"
+            android:textAlignment="viewStart"
+            android:textColor="#E3F2FD"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20px"
+            android:layout_marginTop="10px"
+            android:lineHeight="26dp"
+            tools:text="Title" />
+
+        <ImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="10px"
+            android:src="@drawable/logo_white" />
+
+
+        <ImageView
+            android:id="@+id/btnImageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/floating_action_button"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="floating_action_btn" />
+
+
+</RelativeLayout>

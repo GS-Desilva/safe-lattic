@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "278299516612",
+    "project_id": "safe-lattice-qa",
+    "storage_bucket": "safe-lattice-qa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:278299516612:android:c2e0341eff205d08a0f391",
+        "android_client_info": {
+          "package_name": "com.safelattice.safelattice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "278299516612-3bkisaditjpt2phmhhikhbpa6ioukvhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpHScaNUXxp0hjhbCUTM_bFHijSrBVowA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "278299516612-3bkisaditjpt2phmhhikhbpa6ioukvhu.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "278299516612-t3jbgnj15404ink22fv9ehjq50stkfg6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.safelattice.safelattice"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

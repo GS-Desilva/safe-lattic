@@ -1,0 +1,57 @@
+name: safelattice
+description: Personal safety mobile application
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <=3.7.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  camera: 0.10.5+2
+  cloud_firestore: ^4.7.0
+  crypto: 3.0.3
+  cupertino_icons: 1.0.2
+  device_info_plus: 9.0.1
+  flutter_svg: 2.0.5
+  geolocator: 9.0.2
+  home_widget: 0.1.6
+  intl: 0.18.1
+  shared_preferences: 2.1.1
+  shimmer: 2.0.0
+  smooth_page_indicator: 1.1.0
+  firebase_auth: ^4.6.0
+  firebase_core: ^2.12.0
+  firebase_messaging: ^14.6.1
+  firebase_storage: ^11.2.1
+  flutter_local_notifications: 14.1.1
+  image_cropper: 4.0.1
+  image_gallery_saver: 2.0.1
+  image_picker: 0.8.7+5
+  local_auth: 2.1.6
+  permission_handler: 10.2.0
+  uuid: 3.0.7
+  url_launcher: 6.1.11
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: 1.0.0
+  flutter_launcher_icons: 0.13.0
+  flutter_map: 3.1.0
+  latlong2: 0.8.1
+  lottie: 2.3.2
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images/AppIcon.png"
+  min_sdk_android: 21 # android min sdk
+
+
+flutter:
+  uses-material-design: true
+  assets:
+     - assets/images/
+     - assets/icons/
