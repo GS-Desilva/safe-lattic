@@ -394,8 +394,19 @@ class _ProfileScreenState extends State<ProfileScreen>
       bool updateSuccess = await AuthManager().changePassword(
           currentPassword: currentPassword!, newPassword: newPassword!);
 
-      // TODO sign out here
+      if (updateSuccess && await AuthManager().signOut()) {
+        Navigator.of(context).pushAndRemoveUntil(
+          MaterialPageRoute(builder: (context) => const StagingScreen()),
+          (Route<dynamic> route) => false,
+        );
 
+        SlAlert().showMessageDialog(
+          context: context,
+          title: "Success",
+          message:
+              "New password successfully updated. Please login with new credentials.",
+        );
+      }
     }
   }
 
@@ -423,8 +434,19 @@ class _ProfileScreenState extends State<ProfileScreen>
       bool updateSuccess = await AuthManager().changeEmail(
           currentPassword: currentPassword ?? "", newEmail: newEmail!);
 
-      // TODO sign out here
+      if (updateSuccess && await AuthManager().signOut()) {
+        Navigator.of(context).pushAndRemoveUntil(
+          MaterialPageRoute(builder: (context) => const StagingScreen()),
+          (Route<dynamic> route) => false,
+        );
 
+        SlAlert().showMessageDialog(
+          context: context,
+          title: "Success",
+          message:
+              "New email successfully updated. Please login with new credentials.",
+        );
+      }
     }
   }
 
@@ -1221,7 +1243,13 @@ class _ProfileScreenState extends State<ProfileScreen>
                   buttonText: "Log out",
                   outline: true,
                   callback: () async {
-                      // TODO: Sign out here
+                    if (await AuthManager().signOut()) {
+                      Navigator.of(context).pushAndRemoveUntil(
+                        MaterialPageRoute(
+                            builder: (context) => const StagingScreen()),
+                        (Route<dynamic> route) => false,
+                      );
+                    }
                   },
                 ),
               ),
